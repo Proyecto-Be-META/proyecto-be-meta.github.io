@@ -1,0 +1,32 @@
+{{ define "main" }}
+<article>
+  <header class="mb-10">
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title | emojify }}</h1>
+  </header>
+  {{ .Content }}
+  <div class="members">
+    {{ range .Pages.ByWeight }}
+    {{ $name := .Title }}
+    <div class="member-card">
+      {{ $img := .Resources.GetMatch "photo.*" }}
+      {{ with $img }}
+        {{ $sq := .Fill "200x200 Center" }}
+        <img src="{{ $sq.RelPermalink }}" width="200" height="200" alt="{{ $name }}">
+      {{ end }}
+      <div class="member-info">
+        <h2 class="member-name">{{ .Title }}</h2>
+        <p class="affiliation">{{ .Params.affiliation }}</p>
+        {{ if .Params.draft_translation }}<p class="draft-notice">{{ i18n "draft_translation_notice" }}</p>{{ end }}
+        <div class="bio">{{ .Content }}</div>
+        {{ with .Params.research }}<p class="research">{{ . }}</p>{{ end }}
+        <div class="member-links">
+          {{ with .Params.web }}<a href="{{ . }}" rel="noopener" target="_blank">Web</a>{{ end }}
+          {{ with .Params.scholar }}<a href="{{ . }}" rel="noopener" target="_blank">Google Scholar</a>{{ end }}
+          {{ with .Params.orcid }}<a href="{{ . }}" rel="noopener" target="_blank">ORCID</a>{{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

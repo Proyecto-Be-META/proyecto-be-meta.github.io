@@ -1,0 +1,21 @@
+{{/* Inyecta las publicaciones de data/publications.json agrupadas por año. Uso: {{< publications >}} */}}
+{{ $pubs := hugo.Data.publications }}
+{{ if $pubs }}
+  {{ range $year := (sort (uniq (apply $pubs "index" "." "year")) "value" "desc") }}
+  <h3 class="pub-year">{{ $year }}</h3>
+  <ul class="pub-list">
+    {{ range where $pubs "year" $year }}
+    <li class="pub-item">
+      <span class="pub-authors">{{ delimit .authors ", " }}</span>
+      ({{ .year }}).
+      <span class="pub-title">{{ .title }}</span>.
+      {{ with .venue }}<em>{{ . }}</em>.{{ end }}
+      {{ with .doi }} <a href="https://doi.org/{{ . }}" rel="noopener" target="_blank">doi:{{ . }}</a>{{ end }}
+      {{ with .url }} <a href="{{ . }}" rel="noopener" target="_blank">[link]</a>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+{{ else }}
+  <p>{{ i18n "publications_heading" }}: TODO — pendiente de añadir entradas a <code>references.bib</code>.</p>
+{{ end }}

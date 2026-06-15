@@ -1,0 +1,367 @@
+/* ============================================================================
+   Be-META — Sistema de diseño "cartografía de soluciones"
+   Estética: lienzo crema tipo cera encáustica + lavados pastel de marca +
+   motivo de grafo/red (metaheurísticas) en línea fina. Solo modo claro,
+   fuentes del tema (Blowfish), texturas propias en CSS/SVG (sin derechos).
+   ========================================================================== */
+
+:root {
+  /* Tokens de marca (hex en RGB) para lavados y motivos */
+  --bm-ink:      12, 16, 32;     /* tinta azul-marino casi negra */
+  --bm-lavender: 144, 144, 216;  /* lavanda Be-META */
+  --bm-mint:     168, 216, 216;  /* menta Othimi */
+  --bm-rose:     240, 192, 216;  /* rosa acento */
+  --bm-purple:   181, 140, 196;  /* morado Othimi */
+  --bm-card:     255, 255, 255;  /* vidrio de tarjeta */
+
+  --bm-radius: 16px;
+  --bm-shadow: 0 1px 2px rgba(12,16,32,.04), 0 14px 34px -20px rgba(12,16,32,.22);
+  --bm-shadow-hover: 0 2px 6px rgba(12,16,32,.06), 0 26px 48px -22px rgba(12,16,32,.30);
+}
+
+/* ----------------------------------------------------------------------------
+   1. Lienzo: color liso crema/marfil (fondo plano de la página, sin degradado)
+   -------------------------------------------------------------------------- */
+/* `.bf-scrollbar` eleva la especificidad para ganar a la utilidad `.bg-neutral`.
+   La máscara tras "Be-META" usa este mismo var(--color-neutral) -> coincide exacto. */
+body.bf-scrollbar {
+  background: rgb(var(--color-neutral));
+}
+
+/* ----------------------------------------------------------------------------
+   2. Cabecera
+   -------------------------------------------------------------------------- */
+.header-logo { max-height: 48px; width: auto; }
+.site-header { margin-top: 1.75rem; }
+#main-content { margin-top: 4.5rem; }
+
+/* Estado hover/activo del menú principal con color de marca */
+.main-menu a span { transition: color .2s ease; }
+.main-menu a:hover span,
+.main-menu a span.active {
+  color: rgba(var(--color-primary-600), 1);
+}
+
+/* ----------------------------------------------------------------------------
+   3. Ritmo tipográfico (dentro de .prose) + acento de marca en los H2
+   -------------------------------------------------------------------------- */
+.prose h1 {
+  font-weight: 800;
+  letter-spacing: -.022em;
+  line-height: 1.08;
+  color: rgba(var(--bm-ink), 1);
+}
+.prose h2 {
+  font-weight: 700;
+  letter-spacing: -.012em;
+  margin-top: 2.4em;
+  color: rgba(var(--color-primary-700), 1);
+}
+.prose h3 { font-weight: 700; letter-spacing: -.008em; }
+
+/* Enlaces del cuerpo: navy legible con subrayado fino que se ilumina al pasar */
+.prose a {
+  color: rgba(var(--color-primary-600), 1);
+  text-decoration-color: rgba(var(--color-primary-300), .6);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+.prose a:hover {
+  color: rgba(var(--color-primary-700), 1);
+  text-decoration-color: rgba(var(--bm-purple), 1);
+}
+
+/* ----------------------------------------------------------------------------
+   4. Tarjetas de miembros — vidrio translúcido sobre el lavado
+   -------------------------------------------------------------------------- */
+.member-card {
+  display: flex; gap: 1.6rem; align-items: flex-start;
+  margin: 0 0 1.25rem; padding: 1.5rem 1.6rem;
+  background: rgba(var(--bm-card), .55);
+  border: 1px solid rgba(var(--color-primary-700), .10);
+  border-left: 3px solid rgba(var(--color-primary-300), .75);
+  border-radius: var(--bm-radius);
+  box-shadow: var(--bm-shadow);
+  -webkit-backdrop-filter: blur(7px) saturate(1.08);
+  backdrop-filter: blur(7px) saturate(1.08);
+  transition: transform .25s ease, box-shadow .25s ease, border-left-color .25s ease;
+}
+.member-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--bm-shadow-hover);
+  border-left-color: rgba(var(--bm-purple), .85);
+}
+.member-card img {
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(var(--color-primary-700), .08),
+              0 10px 22px -14px rgba(12,16,32,.4);
+}
+.member-info { display: flex; flex-direction: column; }
+.member-name {
+  font-size: 1.45rem; font-weight: 700; line-height: 1.2; margin: 0 0 .2rem;
+  color: rgba(var(--color-primary-700), 1);
+}
+.member-info .affiliation {
+  margin: 0 0 1rem; font-style: italic;
+  color: rgba(var(--color-neutral-500), 1);
+}
+.member-info .bio { margin: 0 0 1rem; }
+.member-info .bio p { margin: 0 0 .5rem; }
+.member-info .bio p:last-child { margin-bottom: 0; }
+.member-info .research {
+  margin: 0 0 1rem; font-size: .9rem;
+  color: rgba(var(--color-neutral-600), 1);
+}
+
+/* Enlaces de miembro como "pills" de marca */
+.member-links { display: flex; flex-wrap: wrap; gap: .5rem; }
+.member-links a {
+  display: inline-flex; align-items: center; line-height: 1.4;
+  padding: .28rem .85rem; font-size: .85rem; font-weight: 600; text-decoration: none;
+  color: rgba(var(--color-primary-700), 1);
+  border: 1px solid rgba(var(--color-primary-300), .9);
+  border-radius: 999px;
+  background: rgba(var(--bm-card), .4);
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+.member-links a:hover {
+  background: rgba(var(--bm-lavender), .22);
+  border-color: rgba(var(--bm-purple), .9);
+  color: rgba(var(--color-primary-800), 1);
+}
+
+/* ----------------------------------------------------------------------------
+   5. Publicaciones (Impacto) y aviso de borrador
+   -------------------------------------------------------------------------- */
+.pub-year {
+  position: relative;
+  padding-bottom: .3rem;
+  border-bottom: 0;
+  color: rgba(var(--color-primary-700), 1);
+}
+.pub-year::after {
+  content: "";
+  position: absolute; left: 0; bottom: 0;
+  width: 100%; height: 2px;
+  background: linear-gradient(90deg,
+    rgba(var(--bm-rose), 1) 0%,
+    rgba(var(--bm-lavender), .55) 35%,
+    rgba(var(--bm-mint), 0) 100%);
+}
+
+.draft-notice {
+  background: rgba(var(--bm-rose), .22);
+  border-left: 4px solid rgba(var(--bm-purple), .9);
+  border-radius: 0 8px 8px 0;
+  padding: .55rem .8rem; font-size: .9rem; margin-bottom: 1rem;
+}
+
+/* ----------------------------------------------------------------------------
+   6. Tarjetas de repositorios (Plan de datos) — vidrio con acento primario
+   -------------------------------------------------------------------------- */
+.dataset-card {
+  border: 1px solid rgba(var(--color-primary-700), .10);
+  border-left: 4px solid rgba(var(--color-primary-400), 1);
+  border-radius: 12px;
+  padding: 1rem 1.3rem;
+  margin-bottom: 1rem;
+  background: rgba(var(--bm-card), .5);
+  box-shadow: var(--bm-shadow);
+  -webkit-backdrop-filter: blur(6px) saturate(1.05);
+  backdrop-filter: blur(6px) saturate(1.05);
+  transition: transform .2s ease, box-shadow .2s ease, border-left-color .2s ease;
+}
+.dataset-card:hover { transform: translateY(-2px); box-shadow: var(--bm-shadow-hover); border-left-color: rgba(var(--bm-purple), .85); }
+.dataset-card .dataset-title {
+  font-weight: 700; font-size: 1.05rem; margin-bottom: .25rem;
+  color: rgba(var(--color-primary-700), 1);
+}
+.dataset-card .dataset-desc { margin-bottom: .5rem; }
+.dataset-card .dataset-desc p { margin: 0; }
+.dataset-card .dataset-link { font-weight: 600; white-space: nowrap; }
+
+/* ----------------------------------------------------------------------------
+   7. Pie de financiación
+   -------------------------------------------------------------------------- */
+.funding-footer { text-align: center; margin-top: 2rem; }
+.funding-footer p { font-size: .8rem; margin: 0 auto; max-width: 100ch;
+  color: rgba(var(--color-neutral-600), 1); }
+.funding-footer img { max-width: 420px; height: auto; margin: .6rem auto 0; }
+
+/* ----------------------------------------------------------------------------
+   8. Movimiento: entrada suave del contenido (con respeto a reduce-motion)
+   -------------------------------------------------------------------------- */
+@keyframes bm-rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+#main-content > article { animation: bm-rise .6s cubic-bezier(.2,.7,.2,1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  #main-content > article { animation: none; }
+  .member-card, .dataset-card { transition: none; }
+}
+
+/* ============================================================================
+   9. HOME — hero (homepage.layout = "custom"): título + 2 flechas que fluyen
+   ========================================================================== */
+.bm-hero-kicker {
+  display: inline-flex; align-items: center; gap: .55rem;
+  font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: rgba(var(--color-primary-600), 1);
+  margin-bottom: 1rem;
+}
+.bm-hero-grant { color: rgba(var(--color-neutral-500), 1); font-weight: 600; letter-spacing: .06em; }
+.bm-hero-title {
+  font-size: clamp(3rem, 7vw, 5.25rem);
+  font-weight: 800; letter-spacing: -.03em; line-height: .96;
+  margin: 0 0 .85rem;
+  background: linear-gradient(102deg,
+    rgb(var(--color-primary-700)) 0%,
+    rgb(var(--bm-lavender)) 56%,
+    rgb(var(--bm-purple)) 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.bm-hero-tagline {
+  font-size: 1.18rem; line-height: 1.5; max-width: 40ch;
+  color: rgba(var(--color-neutral-700), 1);
+  margin: 0 0 1.75rem;
+}
+.bm-hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.bm-cta {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-weight: 600; font-size: .98rem; line-height: 1.2;
+  padding: .72rem 1.35rem; border-radius: 999px; text-decoration: none;
+  transition: transform .22s ease, box-shadow .22s ease, background .22s ease, border-color .22s ease;
+}
+.bm-cta-primary {
+  color: #fff;
+  background: linear-gradient(102deg, rgba(var(--color-primary-700),1), rgba(var(--color-primary-500),1));
+  box-shadow: 0 10px 24px -12px rgba(var(--color-primary-700), .85);
+}
+.bm-cta-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -12px rgba(var(--color-primary-700), .9); }
+.bm-cta-ghost {
+  color: rgba(var(--color-primary-700), 1);
+  background: rgba(var(--bm-card), .45);
+  border: 1px solid rgba(var(--color-primary-300), .9);
+}
+.bm-cta-ghost:hover { transform: translateY(-2px); background: rgba(var(--bm-lavender), .2); border-color: rgba(var(--bm-purple), .9); }
+.bm-cta svg { width: 1.05em; height: 1.05em; }
+
+/* --- Hero: 2 flechas a ancho completo que fluyen, ocultas tras "Be-META" --- */
+html { overflow-x: clip; } /* recorta el full-bleed sin romper position:sticky (p. ej. el TOC) */
+.bm-hero-arrows { position: relative; margin: .5rem 0 3.25rem; padding: 2.75rem 0 3rem; }
+.bm-hero-arrows .bm-hero-copy { position: relative; z-index: 1; max-width: 640px; pointer-events: none; }
+/* Deja pasar el ratón a las flechas por los huecos vacíos del bloque de texto;
+   reactiva los elementos reales (texto seleccionable, enlaces y botones). */
+.bm-hero-kicker, .bm-title-band, .bm-hero-tagline, .bm-hero-actions { pointer-events: auto; }
+
+/* Banda de flechas a ancho completo del viewport (full-bleed); el script la alinea al título */
+.bm-arrows {
+  position: absolute; z-index: 0; pointer-events: none; overflow: hidden;
+  left: 50%; width: 100vw; margin-left: -50vw;
+  top: 4.6rem; height: 5rem; /* aproximación inicial; JS la ajusta al título exacto */
+}
+/* Cada flecha = barra de grosor (banda/2 menos medio hueco); la altura total de las
+   dos + el hueco = la banda (= altura visual de la palabra). La punta sigue fija (26px).
+   El hueco de 12px entre ellas se mantiene constante (no escala con la altura). */
+.bm-arrow {
+  position: absolute; left: 0; width: 57vw; height: calc(50% - 6px);
+  clip-path: polygon(0% 0%, calc(100% - 26px) 0%, 100% 50%, calc(100% - 26px) 100%, 0% 100%);
+  will-change: transform, opacity;
+  pointer-events: auto; /* re-activa el ratón (la banda lo tiene desactivado) */
+}
+/* Interactividad: al pasar el ratón por encima, esa flecha se detiene (la otra sigue) */
+.bm-arrow:hover { animation-play-state: paused; }
+.bm-arrow--1 { top: 0;             animation: bm-arrow-flow 12s linear infinite;   background: linear-gradient(90deg, rgba(240,192,216,0) 0%, rgba(240,192,216,.95) 14%, rgba(144,144,216,.95) 60%, rgba(168,216,216,1) 100%); }
+.bm-arrow--2 { top: calc(50% + 6px); animation: bm-arrow-flow 8s linear infinite; animation-delay: -3s; background: linear-gradient(90deg, rgba(168,216,216,0) 0%, rgba(168,216,216,.92) 14%, rgba(181,140,196,.95) 60%, rgba(144,144,216,1) 100%); }
+@keyframes bm-arrow-flow {
+  0%   { transform: translateX(-62vw); opacity: 0; }
+  8%   { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateX(100vw); opacity: 0; }
+}
+
+/* Máscara opaca (color de fondo de la página) sobre la palabra: oculta las flechas
+   tras "Be-META"; solo se ven al acercarse por la izquierda y salir por la derecha. */
+.bm-title-band { position: relative; display: block; width: fit-content; max-width: 100%; margin: 0 0 .85rem; }
+.bm-title-mask { position: absolute; inset: -2px -6px -2px -2px; background: rgb(var(--color-neutral)); z-index: 1; }
+.bm-title-band .bm-hero-title { position: relative; z-index: 2; margin: 0; }
+
+@media (prefers-reduced-motion: reduce) { .bm-arrow { animation: none; opacity: .9; transform: translateX(58vw); } }
+
+@media (prefers-reduced-motion: reduce) { .bm-cta { transition: none; } }
+
+/* ============================================================================
+   10. Páginas interiores — cabecera de marca, leads y tarjetas con carácter
+   ========================================================================== */
+/* Título de cada página de sección */
+#main-content header h1 {
+  position: relative;
+  letter-spacing: -.02em;
+  color: rgba(var(--bm-ink), 1);
+}
+/* CTA grande (reutiliza .bm-cta) */
+.bm-cta-lg { font-size: 1.05rem; padding: .85rem 1.7rem; }
+
+/* ---- Othimi (página de producto): descripción a todo el ancho ---- */
+.bm-tool-desc { font-size: 1.14rem; line-height: 1.62; color: rgba(var(--color-neutral-700), 1); margin-bottom: 1.7rem; }
+.bm-tool-desc p { margin: 0 0 1rem; }
+
+/* ---- Noticias (tarjetas) ---- */
+.bm-news-year {
+  font-size: 1.5rem; font-weight: 700; margin: 2.4rem 0 1.1rem;
+  color: rgba(var(--color-primary-700), 1);
+}
+.bm-news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.1rem; }
+.bm-news-card {
+  display: flex; flex-direction: column; align-items: flex-start;
+  padding: 1.35rem 1.45rem; border-radius: var(--bm-radius); text-decoration: none;
+  background: rgba(var(--bm-card), .55);
+  border: 1px solid rgba(var(--color-primary-700), .10);
+  border-top: 3px solid rgba(var(--color-secondary-300), .9);
+  box-shadow: var(--bm-shadow);
+  -webkit-backdrop-filter: blur(7px) saturate(1.05); backdrop-filter: blur(7px) saturate(1.05);
+  transition: transform .25s ease, box-shadow .25s ease, border-top-color .25s ease;
+}
+.bm-news-card:hover { transform: translateY(-3px); box-shadow: var(--bm-shadow-hover); border-top-color: rgba(var(--bm-purple), .9); }
+.bm-date-chip {
+  font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: rgba(var(--color-primary-700), 1);
+  background: rgba(var(--bm-lavender), .2);
+  padding: .22rem .6rem; border-radius: 999px; margin-bottom: .8rem;
+}
+.bm-news-card h3 { margin: 0 0 .5rem; font-size: 1.18rem; font-weight: 700; line-height: 1.25; color: rgba(var(--color-primary-700), 1); }
+.bm-news-sum { margin: 0 0 1rem; font-size: .95rem; color: rgba(var(--color-neutral-600), 1); }
+.bm-news-more { margin-top: auto; font-size: .88rem; font-weight: 600; color: rgba(var(--color-primary-600), 1); }
+.bm-news-card:hover .bm-news-more { color: rgba(var(--bm-purple), 1); }
+
+/* ---- Publicaciones (tarjetas) ---- */
+.pub-list { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; gap: .9rem; }
+.pub-item {
+  padding: 1.1rem 1.3rem; border-radius: 14px; line-height: 1.5;
+  background: rgba(var(--bm-card), .5);
+  border: 1px solid rgba(var(--color-primary-700), .10);
+  border-left: 4px solid rgba(var(--color-primary-300), .8);
+  box-shadow: var(--bm-shadow);
+  -webkit-backdrop-filter: blur(6px) saturate(1.05); backdrop-filter: blur(6px) saturate(1.05);
+  transition: transform .2s ease, box-shadow .2s ease, border-left-color .2s ease;
+}
+.pub-item:hover { transform: translateY(-2px); box-shadow: var(--bm-shadow-hover); border-left-color: rgba(var(--bm-purple), .85); }
+.pub-item .pub-title { font-weight: 700; color: rgba(var(--color-primary-700), 1); }
+.pub-item .pub-authors { color: rgba(var(--color-neutral-600), 1); }
+.pub-item a {
+  display: inline-flex; align-items: center; margin-top: .55rem; margin-right: .4rem;
+  padding: .2rem .7rem; font-size: .8rem; font-weight: 600; text-decoration: none;
+  color: rgba(var(--color-primary-700), 1);
+  border: 1px solid rgba(var(--color-primary-300), .9); border-radius: 999px;
+  transition: background .2s ease, border-color .2s ease;
+}
+.pub-item a:hover { background: rgba(var(--bm-lavender), .2); border-color: rgba(var(--bm-purple), .9); }
+
+@media (prefers-reduced-motion: reduce) {
+  .bm-news-card, .pub-item { transition: none; }
+}

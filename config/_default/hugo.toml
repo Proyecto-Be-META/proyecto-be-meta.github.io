@@ -1,0 +1,17 @@
+baseURL = "https://proyecto-be-meta.github.io/"  # dominio propio en el futuro: añadir static/CNAME y actualizar este valor
+title = "Be-META"
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = false   # ES en la raíz, EN en /en/
+enableRobotsTXT = true
+enableEmoji = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+unsafe = true   # permite HTML embebido (vídeos de YouTube en Impacto)
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+author = "authors"

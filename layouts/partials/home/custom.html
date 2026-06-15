@@ -1,0 +1,67 @@
+{{/* Home - hero de marca + animación de flechas.
+     El cuerpo sigue siendo el Markdown de content/<lang>/_index.md (editable). */}}
+<section class="bm-hero-arrows">
+  {{/* Banda de 2 flechas a ancho completo de página, por detrás del título.
+       Una máscara opaca (color de fondo) sobre la palabra las oculta: solo se ven
+       al acercarse por la izquierda y al salir por la derecha. JS la alinea al título. */}}
+  <div class="bm-arrows" aria-hidden="true">
+    <div class="bm-arrow bm-arrow--1"></div>
+    <div class="bm-arrow bm-arrow--2"></div>
+  </div>
+  <div class="bm-hero-copy">
+    <span class="bm-hero-kicker">{{ i18n "home_kicker" }} <span class="bm-hero-grant">· PID2023-152614OB-I00</span></span>
+    <div class="bm-title-band">
+      <span class="bm-title-mask" aria-hidden="true"></span>
+      <h1 class="bm-hero-title" id="bm-hero-title">{{ .Site.Title }}</h1>
+    </div>
+    {{ with .Description }}<p class="bm-hero-tagline">{{ . | markdownify }}</p>{{ end }}
+    <div class="bm-hero-actions">
+      <a class="bm-cta bm-cta-primary" href="{{ "tool/" | relLangURL }}">
+        {{ i18n "home_tool_cta" }}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="bm-cta bm-cta-ghost" href="{{ "members/" | relLangURL }}">{{ i18n "home_meet_team" }}</a>
+    </div>
+  </div>
+</section>
+<script>
+  (function () {
+    var s = document.querySelector('.bm-hero-arrows');
+    var band = s && s.querySelector('.bm-arrows');
+    var title = document.getElementById('bm-hero-title');
+    if (!s || !band || !title) return;
+    var canvas;
+    /* Banda visual de mayúsculas (cap-height) de la palabra, no la caja de línea */
+    function capBand(tr) {
+      var cs = window.getComputedStyle(title);
+      canvas = canvas || document.createElement('canvas');
+      var ctx = canvas.getContext('2d');
+      ctx.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+      var m = ctx.measureText((title.textContent || 'Be-META').trim());
+      var aA = m.actualBoundingBoxAscent;
+      var fbA = m.fontBoundingBoxAscent, fbD = m.fontBoundingBoxDescent;
+      if (!isFinite(aA) || !isFinite(fbA)) {
+        var fs = parseFloat(cs.fontSize);
+        return { top: (tr.height - fs * 0.72) / 2, height: fs * 0.72 };
+      }
+      var baseline = (tr.height - (fbA + fbD)) / 2 + fbA;
+      /* Solo el ascent real (cima de mayúsculas -> línea base); la palabra no tiene
+         descendentes, así que ignoramos el descent. -2px de ajuste fino de la base. */
+      return { top: baseline - aA - 1, height: aA };
+    }
+    function align() {
+      var sr = s.getBoundingClientRect(), tr = title.getBoundingClientRect();
+      var cb = capBand(tr);
+      band.style.top = (tr.top - sr.top + cb.top) + 'px';
+      band.style.height = cb.height + 'px';
+    }
+    align();
+    window.addEventListener('load', align);
+    window.addEventListener('resize', align);
+    if ('ResizeObserver' in window) { try { new ResizeObserver(align).observe(title); } catch (e) {} }
+  })();
+</script>
+
+<article class="max-w-full prose dark:prose-invert bm-home-body">
+  {{ .Content }}
+</article>

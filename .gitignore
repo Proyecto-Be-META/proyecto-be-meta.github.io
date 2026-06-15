@@ -1,0 +1,11 @@
+/public/
+/resources/_gen/
+# Generado por scripts/bib2json.py (CI lo regenera desde references.bib)
+/data/publications.json
+/assets/jsconfig.json
+hugo_stats.json
+.hugo_build.lock
+node_modules/
+.DS_Store
+__pycache__/
+*.pyc

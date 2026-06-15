@@ -1,0 +1,18 @@
+{{- /* Tarjeta de repositorio de datos. Uso:
+       {{< dataset title="Título" url="https://enlace-al-repositorio" >}}
+       Breve descripción del conjunto de datos (Markdown).
+       {{< /dataset >}}
+     `url` es opcional; si falta, el título no se enlaza. */ -}}
+{{- $title := .Get "title" -}}
+{{- $url := .Get "url" -}}
+<div class="dataset-card">
+  <div class="dataset-title">
+    {{- if $url -}}<a href="{{ $url }}" rel="noopener" target="_blank">{{ $title }}</a>{{- else -}}{{ $title }}{{- end -}}
+  </div>
+  {{- with .Inner | strings.TrimSpace -}}
+  <div class="dataset-desc">{{ . | $.Page.RenderString }}</div>
+  {{- end -}}
+  {{- with $url -}}
+  <a class="dataset-link" href="{{ . }}" rel="noopener" target="_blank">{{ i18n "dataset_view" }} →</a>
+  {{- end -}}
+</div>

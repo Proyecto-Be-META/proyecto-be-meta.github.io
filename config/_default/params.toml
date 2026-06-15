@@ -1,0 +1,37 @@
+# Esquema de color propio
+colorScheme = "bemeta"
+defaultAppearance = "light"
+autoSwitchAppearance = false   # solo modo claro (no seguir la preferencia del SO)
+
+enableSearch = true
+enableCodeCopy = false
+
+# Blowfish resuelve el logo desde .Site.Params.Logo (nivel raíz) con resources.Get
+# relativo a assets/. El fichero está en assets/img/logo-bemeta.png
+logo = "img/logo-bemeta.png"
+# Solo el logo en la cabecera (sin el texto "Be-META"): se quita el título visible
+# en el override layouts/partials/header/basic.html (el param disableTextInHeader del
+# tema no funciona por su lógica `default true`).
+
+[header]
+layout = "basic"
+
+[footer]
+showCopyright = false          # quita la línea "© 2026"
+showThemeAttribution = false   # quita "Built with Blowfish"
+showAppearanceSwitcher = false # sin botón de cambio de tema (sitio solo en claro)
+showScrollToTop = true
+
+[homepage]
+layout = "custom"
+showRecent = false
+
+[article]
+showDate = true
+showAuthor = true
+showReadingTime = false
+
+# --- Flag propio: autodetección de idioma por navegador ---
+# ES es el idioma por defecto (raíz); el JS redirige a /en/ a visitantes con navegador en inglés.
+[params_custom]
+enableLangAutodetect = true

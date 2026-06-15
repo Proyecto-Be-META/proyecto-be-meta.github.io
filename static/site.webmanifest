@@ -1,0 +1,11 @@
+{
+  "name": "Be-META",
+  "short_name": "Be-META",
+  "icons": [
+    { "src": "favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "favicon.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#001848",
+  "background_color": "#faf7f0",
+  "display": "standalone"
+}

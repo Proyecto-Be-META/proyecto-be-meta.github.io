@@ -1,0 +1,5 @@
+{{ if .Params.params_custom.enableLangAutodetect }}
+<script>window.BEMETA_BASE = "{{ "" | relURL }}";</script>
+{{/* sin defer: la decisión de idioma/redirección debe ocurrir antes de pintar (evita parpadeo) */}}
+<script src="{{ "js/lang-autodetect.js" | relURL }}"></script>
+{{ end }}

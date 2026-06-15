@@ -1,0 +1,10 @@
+label = "Español"
+locale = "es"
+weight = 1
+title = "Be-META"
+contentDir = "content/es"
+
+[params]
+displayName = "ES"
+isoCode = "es"
+rtl = false

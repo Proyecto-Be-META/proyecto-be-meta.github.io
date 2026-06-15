@@ -1,0 +1,22 @@
+- id: members_title
+  translation: "Research team"
+- id: impact_title
+  translation: "Impact"
+- id: publications_heading
+  translation: "Publications"
+- id: data_plan_title
+  translation: "Data management plan"
+- id: tool_visit
+  translation: "Open the tool"
+- id: draft_translation_notice
+  translation: "Draft translation pending review by the team."
+- id: dataset_view
+  translation: "View repository"
+- id: home_kicker
+  translation: "Beyond Metaheuristics"
+- id: home_meet_team
+  translation: "Meet the team"
+- id: read_more
+  translation: "Read more"
+- id: home_tool_cta
+  translation: "Tool"

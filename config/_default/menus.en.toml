@@ -1,0 +1,24 @@
+[[main]]
+  name = "Project"
+  pageRef = "/"
+  weight = 1
+[[main]]
+  name = "Members"
+  pageRef = "/members"
+  weight = 2
+[[main]]
+  name = "Impact"
+  pageRef = "/impact"
+  weight = 3
+[[main]]
+  name = "News"
+  pageRef = "/news"
+  weight = 4
+[[main]]
+  name = "Data plan"
+  pageRef = "/data-plan"
+  weight = 5
+[[main]]
+  name = "Tool"
+  pageRef = "/tool"
+  weight = 6

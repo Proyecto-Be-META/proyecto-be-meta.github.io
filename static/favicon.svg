@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Be-META">
+  <!-- Cuadrado de borde grueso y esquinas redondeadas, inspirado en el anagrama del logo. -->
+  <style>
+    @media (prefers-color-scheme: dark) { rect { stroke: #8d8dd4; } }
+  </style>
+  <rect x="16" y="16" width="68" height="68" rx="10" fill="none" stroke="#646bad" stroke-width="22"/>
+</svg>
