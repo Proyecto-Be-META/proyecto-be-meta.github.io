@@ -2,7 +2,7 @@
 title = "Gara Miranda Valladares"
 weight = 10
 affiliation = "Universidad de La Laguna"
-research = "optimización combinatoria, metaheurísticas, pensamiento computacional"
+research = "combinatorial optimization, metaheuristics, computational thinking"
 web = "https://portalciencia.ull.es/investigadores/81584/detalle"
 scholar = "https://scholar.google.com/citations?user=6iT-PmEAAAAJ&hl=es"
 orcid = "https://orcid.org/0000-0002-2181-0067"

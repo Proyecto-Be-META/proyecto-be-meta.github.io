@@ -2,7 +2,7 @@
 title = "Javier Hernández Aceituno"
 weight = 40
 affiliation = "Universidad de La Laguna"
-research = "Desarrollo de aplicaciones informáticas en Arqueología, Medicina, Ecología y Educación"
+research = "Development of software applications in Archaeology, Medicine, Ecology and Education"
 scholar = "https://scholar.google.es/citations?user=Zz3enaoAAAAJ"
 orcid = "https://orcid.org/0000-0001-8885-0605"
 photo = "photo.jpg"

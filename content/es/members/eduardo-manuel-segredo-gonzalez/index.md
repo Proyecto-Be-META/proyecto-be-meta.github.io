@@ -7,13 +7,14 @@ web = "https://portalciencia.ull.es/investigadores/80784/detalle"
 scholar = "https://scholar.google.com/citations?user=C1Qets4AAAAJ&hl=es"
 orcid = "https://orcid.org/0000-0002-4085-4356"
 photo = "photo.jpeg"
+draft_translation = true
 [build]
   render = "never"
   list = "local"
 +++
 
-Eduardo Segredo is an Associate Professor in the Department of Computer Engineering and Systems at the Universidad de La Laguna, where he has developed a solid academic and research career since completing his Ph.D. in Computer Science in 2014. His early career includes international research experience through competitive mobility programs such as HPC-Europa2, funded by the European Union, which enabled pre-doctoral stays at Edinburgh Napier University and the University of Edinburgh. He later worked as a Senior Research Fellow at Edinburgh Napier University (2015–2017) under the supervision of Professor Emma Hart.
+Eduardo Segredo es Profesor Titular en el Departamento de Ingeniería Informática y de Sistemas de la Universidad de La Laguna, donde ha desarrollado una sólida trayectoria académica e investigadora desde que obtuvo su doctorado en Informática en 2014. En sus inicios cuenta con experiencia investigadora internacional gracias a programas de movilidad competitivos como HPC-Europa2, financiado por la Unión Europea, que le permitieron realizar estancias predoctorales en la Edinburgh Napier University y en la University of Edinburgh. Posteriormente trabajó como Senior Research Fellow en la Edinburgh Napier University (2015–2017) bajo la supervisión de la profesora Emma Hart.
 
-His research focuses primarily on optimization and evolutionary computation. He has participated in multiple competitive R&D&I projects at both regional and national levels, as well as in collaborations with external organizations and technology transfer initiatives. His publication record includes over 20 articles in high-impact journals indexed in Journal Citation Reports, alongside more than 50 contributions to leading international conferences such as GECCO, CEC, and PPSN.
+Su investigación se centra principalmente en la optimización y la computación evolutiva. Ha participado en múltiples proyectos competitivos de I+D+i tanto a nivel regional como nacional, así como en colaboraciones con organizaciones externas e iniciativas de transferencia tecnológica. Su producción científica incluye más de 20 artículos en revistas de alto impacto indexadas en el Journal Citation Reports, junto con más de 50 contribuciones a congresos internacionales de referencia como GECCO, CEC y PPSN.
 
-In addition to his research output, he has played an active role in research management, serving as Principal Investigator in several competitive funded projects. He also contributes regularly to the scientific community as a program committee member, journal reviewer, and evaluator of research project proposals for national funding agencies, including those of Chile and Spain.
+Además de su actividad investigadora, ha desempeñado un papel activo en la gestión de la investigación, actuando como investigador principal en varios proyectos competitivos financiados. Asimismo, contribuye de forma habitual a la comunidad científica como miembro de comités de programa, revisor de revistas y evaluador de propuestas de proyectos de investigación para agencias nacionales de financiación, incluidas las de Chile y España.

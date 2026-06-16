@@ -2,7 +2,7 @@
 title = "Eduardo Manuel Segredo González"
 weight = 20
 affiliation = "Universidad de La Laguna"
-research = "Optimización, computación evolutiva, aprendizaje automático, inteligencia artificial, pensamiento computacional"
+research = "Optimization, evolutionary computation, machine learning, artificial intelligence, computational thinking"
 web = "https://portalciencia.ull.es/investigadores/80784/detalle"
 scholar = "https://scholar.google.com/citations?user=C1Qets4AAAAJ&hl=es"
 orcid = "https://orcid.org/0000-0002-4085-4356"
