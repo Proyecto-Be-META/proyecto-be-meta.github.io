@@ -2,7 +2,7 @@
 title = "Casiano Rodríguez León"
 weight = 60
 affiliation = "Universidad de La Laguna"
-research = "Education, Compilers, Computer Programming, Algorithms, High Performance Computing, Optimization"
+research = "Educación, compiladores, programación de computadores, algoritmos, computación de altas prestaciones, optimización"
 web = "https://crguezl.github.io"
 scholar = "https://scholar.google.es/citations?user=wgSgtXYAAAAJ"
 orcid = "https://orcid.org/0000-0002-4908-8643"
