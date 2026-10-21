@@ -6,7 +6,7 @@ research = "MDM (master data management), graph databases, metaheuristics for ho
 scholar = "https://scholar.google.es/citations?user=YV0CPnMAAAAJ&hl=es"
 orcid = "https://orcid.org/0009-0003-5917-2800"
 photo = "photo.jpg"
-draft_translation = true
+draft_translation = false
 [build]
   render = "never"
   list = "local"

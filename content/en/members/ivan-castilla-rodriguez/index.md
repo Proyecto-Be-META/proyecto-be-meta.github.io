@@ -6,7 +6,7 @@ research = "Modeling and simulation: applications in healthcare, energy and educ
 scholar = "https://scholar.google.com/citations?user=hDROIFkAAAAJ&hl=es"
 orcid = "https://orcid.org/0000-0003-3933-2582"
 photo = "photo.jpg"
-draft_translation = true
+draft_translation = false
 [build]
   render = "never"
   list = "local"

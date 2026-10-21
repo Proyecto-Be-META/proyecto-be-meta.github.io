@@ -6,7 +6,7 @@ research = "Design of heuristic optimizers; combinatorial optimization; multi-ob
 scholar = "https://scholar.google.es/citations?user=kGiaq7gAAAAJ&hl=es"
 orcid = "https://orcid.org/0000-0002-5431-5927"
 photo = "photo.jpg"
-draft_translation = true
+draft_translation = false
 [build]
   render = "never"
   list = "local"

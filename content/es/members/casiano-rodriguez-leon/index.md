@@ -7,7 +7,7 @@ web = "https://crguezl.github.io"
 scholar = "https://scholar.google.es/citations?user=wgSgtXYAAAAJ"
 orcid = "https://orcid.org/0000-0002-4908-8643"
 photo = "photo.jpg"
-draft_translation = true
+draft_translation = false
 [build]
   render = "never"
   list = "local"

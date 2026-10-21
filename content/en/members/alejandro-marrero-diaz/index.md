@@ -7,7 +7,7 @@ web = "https://portalciencia.ull.es/investigadores/98785/detalle"
 scholar = "https://scholar.google.com/citations?user=mNZVQtcAAAAJ"
 orcid = "https://orcid.org/0000-0003-3866-5393"
 photo = "photo.jpg"
-draft_translation = true
+draft_translation = false
 [build]
   render = "never"
   list = "local"

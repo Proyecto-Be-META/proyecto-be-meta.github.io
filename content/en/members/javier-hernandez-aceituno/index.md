@@ -6,7 +6,7 @@ research = "Development of software applications in Archaeology, Medicine, Ecolo
 scholar = "https://scholar.google.es/citations?user=Zz3enaoAAAAJ"
 orcid = "https://orcid.org/0000-0001-8885-0605"
 photo = "photo.jpg"
-draft_translation = true
+draft_translation = false
 [build]
   render = "never"
   list = "local"
