@@ -1,4 +1,4 @@
 ---
-title: "Research team"
+title: "Research and work team"
 layout: "list"
 ---

@@ -3,10 +3,6 @@ title: "Be-META"
 description: "Beyond Metaheuristics - a reference framework for visual modeling of problems and algorithms in hospital management."
 ---
 
-{{< alert >}}
-Draft translation pending review by the team.
-{{< /alert >}}
-
 ## Project overview
 
 Be-META (*Beyond Metaheuristics*) is a research and innovation project that develops a reference framework for the visual modeling of problems and algorithms in the field of hospital management. Its goal is to improve the understanding, design and application of complex optimization methods through intuitive visual representations and interactive tools.
