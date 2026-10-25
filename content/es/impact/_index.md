@@ -19,27 +19,18 @@ Esta página recoge el impacto del proyecto: publicaciones científicas, partici
 
 ## Trabajos Fin de Grado
 
-- **Alberto Antonio Hernández Hernández (2026)**. Aplicación de metaheurísticas para la optimización de recursos en el ámbito hospitalario. URL: [http://riull.ull.es/xmlui/handle/915/48050](http://riull.ull.es/xmlui/handle/915/48050)
-
-- **Miguel Luna García (2026)**. Ontología para el diseño de metaheurísticas en optimización. URL: [http://riull.ull.es/xmlui/handle/915/43253](http://riull.ull.es/xmlui/handle/915/43253)
-
-- **Joel García Cubas (2026)**. Configuración y evaluación de modelos grandes de lenguaje para la codificación CIE-10. URL: [http://riull.ull.es/xmlui/handle/915/47677](http://riull.ull.es/xmlui/handle/915/47677)
-
-- **Óscar Guerra Rodríguez (2026)**. Framework de gemelos digitales para la
-gestión de listas de espera quirúrgicas.
-
-- **Marta Rosa Cordero (2026)**. Graphics: Aplicación Web para el análisis de resultados en optimización.
-
-- **Ángela Fuhuan Luis Pérez (2026)**.
-
-- **Marlon Eduardo Salazar Amador (2026)**.
-
-- **Javier Gómez Alayón (2026)**.
-
-- **Néstor Rubén Delgado Feliciano (2025)**. HealthPlanify - Un visualizador de asignación de recursos hospitalarios. URL: [http://riull.ull.es/xmlui/handle/915/42596](http://riull.ull.es/xmlui/handle/915/42596)
-
-- **Alejandro Javier Aguiar Pérez (2025)**. Gemelos digitales aplicados a la gestión sanitaria: análisis en entornos estocásticos. URL: [http://riull.ull.es/xmlui/handle/915/42494](http://riull.ull.es/xmlui/handle/915/42494)
-
-- **Javier Almenara Herrera (2025)**. Metaheurísticas en la optimización de la gestión hospitalaria.
+{{< cards >}}
+{{< card authors="Alberto Antonio Hernández Hernández" year="2026" title="Aplicación de metaheurísticas para la optimización de recursos en el ámbito hospitalario" url="http://riull.ull.es/xmlui/handle/915/48050" >}}
+{{< card authors="Miguel Luna García" year="2026" title="Ontología para el diseño de metaheurísticas en optimización" url="http://riull.ull.es/xmlui/handle/915/43253" >}}
+{{< card authors="Joel García Cubas" year="2026" title="Configuración y evaluación de modelos grandes de lenguaje para la codificación CIE-10" url="http://riull.ull.es/xmlui/handle/915/47677" >}}
+{{< card authors="Óscar Guerra Rodríguez" year="2026" title="Framework de gemelos digitales para la gestión de listas de espera quirúrgicas" >}}
+{{< card authors="Marta Rosa Cordero" year="2026" title="Graphics: Aplicación Web para el análisis de resultados en optimización" >}}
+{{< card authors="Ángela Fuhuan Luis Pérez" year="2026" >}}
+{{< card authors="Marlon Eduardo Salazar Amador" year="2026" >}}
+{{< card authors="Javier Gómez Alayón" year="2026" >}}
+{{< card authors="Néstor Rubén Delgado Feliciano" year="2025" title="HealthPlanify - Un visualizador de asignación de recursos hospitalarios" url="http://riull.ull.es/xmlui/handle/915/42596" >}}
+{{< card authors="Alejandro Javier Aguiar Pérez" year="2025" title="Gemelos digitales aplicados a la gestión sanitaria: análisis en entornos estocásticos" url="http://riull.ull.es/xmlui/handle/915/42494" >}}
+{{< card authors="Javier Almenara Herrera" year="2025" title="Metaheurísticas en la optimización de la gestión hospitalaria" >}}
+{{< /cards >}}
 
 ## Difusión y colaboraciones

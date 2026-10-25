@@ -1,0 +1,19 @@
+{{- /* Contenedor de tarjetas de Impacto (mismo estilo que las publicaciones), agrupadas
+     por año en orden descendente; dentro de cada año se respeta el orden escrito. Uso:
+       {{< cards >}}
+       {{< card authors="Nombre Apellido" year="2026" title="Título" url="https://..." >}}
+       {{< card authors="Otra Persona" year="2025" title="Otro título" >}}
+       {{< /cards >}}
+     Sirve para cualquier subsección: tesis, TFM, TFG, charlas, difusión...
+     Los ítems sin `year` van al final, sin subtítulo. */ -}}
+{{- $_ := .Inner -}}{{/* renderiza los {{< card >}} hijos, que se registran en .Store */}}
+{{- $items := .Store.Get "items" | default slice -}}
+{{- $years := slice -}}
+{{- range $items }}{{ with .year }}{{ $years = $years | append (int .) }}{{ end }}{{ end -}}
+{{- range $year := sort (uniq $years) "value" "desc" }}
+<h3 class="pub-year">{{ $year }}</h3>
+{{ partial "impact-card-list.html" (where $items "year" (string $year)) }}
+{{- end }}
+{{- with where $items "year" "" }}
+{{ partial "impact-card-list.html" . }}
+{{- end }}

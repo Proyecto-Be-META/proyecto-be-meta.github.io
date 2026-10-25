@@ -19,26 +19,18 @@ This page gathers the project's impact: scientific publications, conference part
 
 ## Bachelor's theses
 
-- **Alberto Antonio Hernández Hernández (2026)**. Application of Metaheuristics for Resource Optimisation in Hospital Settings. URL: [http://riull.ull.es/xmlui/handle/915/48050](http://riull.ull.es/xmlui/handle/915/48050)
-
-- **Miguel Luna García (2026)**. Ontology for the Design of Metaheuristics in Optimisation. URL: [http://riull.ull.es/xmlui/handle/915/43253](http://riull.ull.es/xmlui/handle/915/43253)
-
-- **Joel García Cubas (2026)**. Configuration and Evaluation of Large Language Models for ICD-10 Coding. URL: [http://riull.ull.es/xmlui/handle/915/47677](http://riull.ull.es/xmlui/handle/915/47677)
-
-- **Óscar Guerra Rodríguez (2026)**. Digital Twin Framework for Surgical Waiting List Management.
-
-- **Marta Rosa Cordero (2026)**. Graphics: A Web Application for Analysing Optimisation Results.
-
-- **Ángela Fuhuan Luis Pérez (2026)**.
-
-- **Marlon Eduardo Salazar Amador (2026)**.
-
-- **Javier Gómez Alayón (2026)**.
-
-- **Néstor Rubén Delgado Feliciano (2025)**. HealthPlanify: A Visualisation Tool for Hospital Resource Allocation. URL: [http://riull.ull.es/xmlui/handle/915/42596](http://riull.ull.es/xmlui/handle/915/42596)
-
-- **Alejandro Javier Aguiar Pérez (2025)**. Digital Twins Applied to Healthcare Management: Analysis in Stochastic Environments. URL: [http://riull.ull.es/xmlui/handle/915/42494](http://riull.ull.es/xmlui/handle/915/42494)
-
-- **Javier Almenara Herrera (2025)**. Metaheuristics for Optimising Hospital Management.
+{{< cards >}}
+{{< card authors="Alberto Antonio Hernández Hernández" year="2026" title="Application of Metaheuristics for Resource Optimisation in Hospital Settings" url="http://riull.ull.es/xmlui/handle/915/48050" >}}
+{{< card authors="Miguel Luna García" year="2026" title="Ontology for the Design of Metaheuristics in Optimisation" url="http://riull.ull.es/xmlui/handle/915/43253" >}}
+{{< card authors="Joel García Cubas" year="2026" title="Configuration and Evaluation of Large Language Models for ICD-10 Coding" url="http://riull.ull.es/xmlui/handle/915/47677" >}}
+{{< card authors="Óscar Guerra Rodríguez" year="2026" title="Digital Twin Framework for Surgical Waiting List Management" >}}
+{{< card authors="Marta Rosa Cordero" year="2026" title="Graphics: A Web Application for Analysing Optimisation Results" >}}
+{{< card authors="Ángela Fuhuan Luis Pérez" year="2026" >}}
+{{< card authors="Marlon Eduardo Salazar Amador" year="2026" >}}
+{{< card authors="Javier Gómez Alayón" year="2026" >}}
+{{< card authors="Néstor Rubén Delgado Feliciano" year="2025" title="HealthPlanify: A Visualisation Tool for Hospital Resource Allocation" url="http://riull.ull.es/xmlui/handle/915/42596" >}}
+{{< card authors="Alejandro Javier Aguiar Pérez" year="2025" title="Digital Twins Applied to Healthcare Management: Analysis in Stochastic Environments" url="http://riull.ull.es/xmlui/handle/915/42494" >}}
+{{< card authors="Javier Almenara Herrera" year="2025" title="Metaheuristics for Optimising Hospital Management" >}}
+{{< /cards >}}
 
 ## Dissemination and collaborations

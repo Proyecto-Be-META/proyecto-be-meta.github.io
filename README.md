@@ -33,6 +33,26 @@ resto de la página de Impacto (vídeos, colaboraciones, difusión) es Markdown 
 El JSON resultante (`data/publications.json`) es **generado** y está en `.gitignore`: lo
 regeneran `make`/CI desde el `.bib`, no hace falta editarlo ni versionarlo a mano.
 
+### Añadir tesis, TFM, TFG u otros ítems con tarjeta (Impacto)
+Cualquier subsección de Impacto puede mostrar sus ítems como tarjetas, con el mismo
+estilo que las publicaciones. Envuelve los ítems en `{{< cards >}}` … `{{< /cards >}}`
+y añade una línea `{{< card … >}}` por ítem:
+
+```markdown
+## Trabajos Fin de Grado
+
+{{< cards >}}
+{{< card authors="Nombre Apellido" year="2026" title="Título del trabajo" url="http://riull.ull.es/..." >}}
+{{< card authors="Otra Persona" year="2025" title="Otro título" >}}
+{{< /cards >}}
+```
+
+Parámetros: `authors` (obligatorio), `year`, `title`, `venue` (revista, congreso,
+universidad…), `url` y `doi`; los que falten no se muestran. Las tarjetas se agrupan
+por año (subtítulo por año, del más reciente al más antiguo; dentro de cada año, en el
+orden escrito) y las que no tienen `year` van al final. Si un texto lleva comillas
+dobles, usa comillas tipográficas (“ ”) o simples dentro del valor.
+
 ### Cambiar el enlace de la herramienta / el plan de datos
 El enlace a Othimi es el campo `tool_url` del front matter de `content/*/tool/_index.md`;
 los repositorios del plan de datos van en `content/*/data-plan/_index.md`.

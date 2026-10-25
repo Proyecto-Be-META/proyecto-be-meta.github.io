@@ -1,0 +1,16 @@
+{{- /* Tarjeta de un ítem de Impacto; va dentro de {{< cards >}} ... {{< /cards >}}. Uso:
+       {{< card authors="Nombre Apellido" year="2026" title="Título" venue="Universidad de La Laguna" url="https://..." doi="10.xxxx/..." >}}
+     Todos los parámetros son opcionales salvo `authors`; los ausentes no se muestran.
+     No pinta nada: registra el ítem en el {{< cards >}} padre, que las agrupa por año. */ -}}
+{{- with .Parent -}}
+  {{- .Store.Add "items" (slice (dict
+      "authors" ($.Get "authors")
+      "year"    (string ($.Get "year" | default ""))
+      "title"   ($.Get "title")
+      "venue"   ($.Get "venue")
+      "doi"     ($.Get "doi")
+      "url"     ($.Get "url")
+  )) -}}
+{{- else -}}
+  {{- errorf "%s: {{< card >}} debe ir dentro de {{< cards >}}" $.Position -}}
+{{- end -}}

@@ -340,8 +340,9 @@ html { overflow-x: clip; } /* recorta el full-bleed sin romper position:sticky (
 .bm-news-card:hover .bm-news-more { color: rgba(var(--bm-purple), 1); }
 
 /* ---- Publicaciones (tarjetas) ---- */
-.pub-list { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; gap: .9rem; }
+.pub-list { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; gap: .35rem; }
 .pub-item {
+  margin: 0; /* anula el margen de .prose li: en un grid no colapsa y se suma al gap */
   padding: 1.1rem 1.3rem; border-radius: 14px; line-height: 1.5;
   background: rgba(var(--bm-card), .5);
   border: 1px solid rgba(var(--color-primary-700), .10);
@@ -361,6 +362,11 @@ html { overflow-x: clip; } /* recorta el full-bleed sin romper position:sticky (
   transition: background .2s ease, border-color .2s ease;
 }
 .pub-item a:hover { background: rgba(var(--bm-lavender), .2); border-color: rgba(var(--bm-purple), .9); }
+
+/* Tarjetas genéricas de Impacto ({{< cards >}}: tesis, TFM, TFG...): acento menta -> rosa
+   para distinguirlas de las publicaciones (lavanda -> morado) */
+.impact-cards .pub-item { border-left-color: rgba(var(--bm-mint), 1); }
+.impact-cards .pub-item:hover { border-left-color: rgba(var(--bm-rose), 1); }
 
 @media (prefers-reduced-motion: reduce) {
   .bm-news-card, .pub-item { transition: none; }

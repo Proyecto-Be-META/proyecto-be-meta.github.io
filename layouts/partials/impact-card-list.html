@@ -1,0 +1,13 @@
+{{- /* Lista de tarjetas de Impacto; recibe los ítems registrados por {{< card >}}. */ -}}
+<ul class="pub-list impact-cards">
+  {{- range . }}
+  <li class="pub-item">
+    <span class="pub-authors">{{ .authors }}</span>
+    {{- with .year }} ({{ . }}){{ end }}.
+    {{ with .title }}<span class="pub-title">{{ . }}</span>.{{ end }}
+    {{ with .venue }}<em>{{ . }}</em>.{{ end }}
+    {{ with .doi }} <a href="https://doi.org/{{ . }}" rel="noopener" target="_blank">doi:{{ . }}</a>{{ end }}
+    {{ with .url }} <a href="{{ . }}" rel="noopener" target="_blank">[link]</a>{{ end }}
+  </li>
+  {{- end }}
+</ul>
