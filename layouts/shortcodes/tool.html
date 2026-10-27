@@ -1,0 +1,20 @@
+{{- /* Tarjeta de herramienta (sección Herramientas). Uso:
+       {{< tool name="Nombre" url="https://enlace-a-la-herramienta" >}}
+       Breve descripción de la herramienta (Markdown).
+       {{< /tool >}}
+     `url` es opcional; si falta, no se muestra el botón. `label` cambia el texto
+     del botón (por defecto, i18n "tool_visit"). */ -}}
+{{- $name := .Get "name" -}}
+{{- $url := .Get "url" -}}
+<div class="bm-tool-card not-prose">
+  <h2 class="bm-tool-name">{{ $name }}</h2>
+  {{- with .Inner | strings.TrimSpace }}
+  <div class="bm-tool-card-desc">{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+  {{- end }}
+  {{- with $url }}
+  <a class="bm-cta bm-cta-primary" href="{{ . }}" target="_blank" rel="noopener">
+    {{ $.Get "label" | default (i18n "tool_visit") }}
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+  {{- end }}
+</div>

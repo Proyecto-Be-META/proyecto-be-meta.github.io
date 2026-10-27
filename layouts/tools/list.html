@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="max-w-full">
+  <header>
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title | emojify }}</h1>
+  </header>
+
+  <div class="bm-tool-copy mt-6">
+    <div class="bm-tool-desc prose dark:prose-invert max-w-full">{{ .Content }}</div>
+  </div>
+</article>
+{{ end }}

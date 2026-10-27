@@ -53,9 +53,20 @@ por año (subtítulo por año, del más reciente al más antiguo; dentro de cada
 orden escrito) y las que no tienen `year` van al final. Si un texto lleva comillas
 dobles, usa comillas tipográficas (“ ”) o simples dentro del valor.
 
-### Cambiar el enlace de la herramienta / el plan de datos
-El enlace a Othimi es el campo `tool_url` del front matter de `content/*/tool/_index.md`;
-los repositorios del plan de datos van en `content/*/data-plan/_index.md`.
+### Añadir o editar herramientas / el plan de datos
+Cada herramienta es una tarjeta en `content/*/tools/_index.md`, con su nombre, una
+descripción en Markdown y el botón de acceso:
+
+```markdown
+{{< tool name="Othimi" url="https://othimi.pro/auth" >}}
+Breve descripción de la herramienta.
+{{< /tool >}}
+```
+
+El campo `url` es opcional (sin él no hay botón) y `label` cambia el texto del botón
+(por defecto, "Abrir la herramienta" / "Open the tool").
+
+Por su parte, los repositorios del plan de datos van en `content/*/data-plan/_index.md`.
 
 ## Idiomas
 

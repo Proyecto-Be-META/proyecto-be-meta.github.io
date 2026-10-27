@@ -19,6 +19,6 @@
   pageRef = "/data-plan"
   weight = 5
 [[main]]
-  name = "Herramienta"
-  pageRef = "/tool"
+  name = "Herramientas"
+  pageRef = "/tools"
   weight = 6

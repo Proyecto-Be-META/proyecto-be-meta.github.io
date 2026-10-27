@@ -202,7 +202,7 @@ body.bf-scrollbar {
 
 @media (prefers-reduced-motion: reduce) {
   #main-content > article { animation: none; }
-  .member-card, .dataset-card { transition: none; }
+  .member-card, .dataset-card, .bm-tool-card { transition: none; }
 }
 
 /* ============================================================================
@@ -307,9 +307,36 @@ html { overflow-x: clip; } /* recorta el full-bleed sin romper position:sticky (
 /* CTA grande (reutiliza .bm-cta) */
 .bm-cta-lg { font-size: 1.05rem; padding: .85rem 1.7rem; }
 
-/* ---- Othimi (página de producto): descripción a todo el ancho ---- */
+/* ---- Herramientas: intro a todo el ancho + una tarjeta por herramienta ---- */
 .bm-tool-desc { font-size: 1.14rem; line-height: 1.62; color: rgba(var(--color-neutral-700), 1); margin-bottom: 1.7rem; }
 .bm-tool-desc p { margin: 0 0 1rem; }
+.bm-tool-card {
+  margin: 0 0 1.25rem; padding: 1.5rem 1.6rem;
+  background: rgba(var(--bm-card), .55);
+  border: 1px solid rgba(var(--color-primary-700), .10);
+  border-left: 3px solid rgba(var(--color-primary-300), .75);
+  border-radius: var(--bm-radius);
+  box-shadow: var(--bm-shadow);
+  -webkit-backdrop-filter: blur(7px) saturate(1.08);
+  backdrop-filter: blur(7px) saturate(1.08);
+  transition: transform .25s ease, box-shadow .25s ease, border-left-color .25s ease;
+}
+.bm-tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--bm-shadow-hover);
+  border-left-color: rgba(var(--bm-purple), .85);
+}
+.bm-tool-card .bm-tool-name {
+  font-size: 1.45rem; font-weight: 700; line-height: 1.2; letter-spacing: -.012em;
+  margin: 0 0 .6rem; color: rgba(var(--color-primary-700), 1);
+}
+.bm-tool-card .bm-tool-card-desc { margin: 0 0 1.2rem; }
+.bm-tool-card .bm-tool-card-desc p { margin: 0 0 .6rem; }
+.bm-tool-card .bm-tool-card-desc p:last-child { margin-bottom: 0; }
+.bm-tool-card .bm-tool-card-desc a { text-decoration: underline; }
+/* El CTA va dentro de .prose: sin esto, `.prose a` le pondría texto azul y subrayado */
+.bm-tool-card a.bm-cta-primary,
+.bm-tool-card a.bm-cta-primary:hover { color: #fff; text-decoration: none; }
 
 /* ---- Noticias (tarjetas) ---- */
 .bm-news-year {
