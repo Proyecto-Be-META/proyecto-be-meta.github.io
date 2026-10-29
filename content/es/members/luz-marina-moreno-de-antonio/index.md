@@ -1,6 +1,6 @@
 +++
 title = "Luz Marina Moreno de Antonio"
-weight = 70
+weight = 40
 affiliation = "Universidad de La Laguna"
 research = "MDM (gestión de datos maestros), bases de datos de grafos, metaheurísticas orientadas a la gestión hospitalaria, computación paralela."
 scholar = "https://scholar.google.es/citations?user=YV0CPnMAAAAJ&hl=es"

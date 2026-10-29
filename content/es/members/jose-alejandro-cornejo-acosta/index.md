@@ -1,6 +1,6 @@
 +++
 title = "José Alejandro Cornejo Acosta"
-weight = 20
+weight = 110
 affiliation = "Centro de Investigación en Matemáticas (CIMAT), México"
 research = "Optimización, ciencia de redes, algoritmos paralelos"
 web = "https://www.cimat.mx/autor/?inv=jose-alejandro-cornejo-acosta"

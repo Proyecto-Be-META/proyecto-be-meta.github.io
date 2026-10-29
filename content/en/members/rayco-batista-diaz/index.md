@@ -1,6 +1,6 @@
 +++
 title = "Rayco Batista Díaz"
-weight = 20
+weight = 90
 affiliation = "Universidad de La Laguna"
 research = "Behavioural Analysis in Event Streams and Transformer-Based Models"
 web = "https://raycobd.com"

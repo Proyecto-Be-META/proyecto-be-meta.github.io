@@ -1,6 +1,6 @@
 +++
 title = "Alejandro Marrero Díaz"
-weight = 80
+weight = 70
 affiliation = "Universidad de La Laguna"
 research = "Artificial Intelligence - ML/DL, Optimization, Evolutionary Computation, Instance Generation"
 web = "https://portalciencia.ull.es/investigadores/98785/detalle"

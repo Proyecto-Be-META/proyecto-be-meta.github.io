@@ -1,6 +1,6 @@
 +++
 title = "Javier Hernández Aceituno"
-weight = 40
+weight = 50
 affiliation = "Universidad de La Laguna"
 research = "Desarrollo de aplicaciones informáticas en Arqueología, Medicina, Ecología y Educación"
 scholar = "https://scholar.google.es/citations?user=Zz3enaoAAAAJ"

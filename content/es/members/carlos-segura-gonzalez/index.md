@@ -1,6 +1,6 @@
 +++
 title = "Carlos Segura González"
-weight = 50
+weight = 100
 affiliation = "Centro de Investigación en Matemáticas"
 research = "Diseño de optimizadores heurísticas; optimización combinatoria; optimización multi-objetivo; programación competitiva"
 scholar = "https://scholar.google.es/citations?user=kGiaq7gAAAAJ&hl=es"

@@ -1,9 +1,9 @@
 +++
 title = "Rafael Herrero Álvarez"
-weight = 20
+weight = 80
 affiliation = "Universidad de La Laguna"
 research = "Artificial Intelligence Applied to Education, Computational Thinking and Education, Adaptive Learning Systems, Affective Computing and Emotion Analysis, Educational Technology and Teaching Innovation, Digital Skills and Teacher Training"
-web = "rafaherrero.com"
+web = "https://rafaherrero.com/"
 scholar = "https://scholar.google.es/citations?user=OORMKjsAAAAJ"
 orcid = "https://orcid.org/0000-0003-0650-7155"
 photo = "photo.jpeg"
