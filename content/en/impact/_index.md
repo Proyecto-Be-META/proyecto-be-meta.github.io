@@ -13,10 +13,6 @@ This page gathers the project's impact: scientific publications, conference part
 
 {{< publications >}}
 
-## Doctoral theses
-
-## Master's theses
-
 ## Bachelor's theses
 
 {{< cards >}}

@@ -13,10 +13,6 @@ Esta página recoge el impacto del proyecto: publicaciones científicas, partici
 
 {{< publications >}}
 
-## Tesis
-
-## Trabajos Fin de Máster
-
 ## Trabajos Fin de Grado
 
 {{< cards >}}
