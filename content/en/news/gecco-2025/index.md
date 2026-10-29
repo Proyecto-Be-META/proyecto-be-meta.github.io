@@ -1,23 +1,16 @@
 ---
-title: "New publication in GECCO 2025"
+title: "Othimi: a visual platform for learning and experimenting with metaheuristics developed within Be-META"
 date: 2025-09-17
 draft: false
-summary: "Othimi: A Block-Based Educational Programming Tool for Metaheuristic Design and Optimization"
+summary: "The paper on Othimi, presented at GECCO 2025, is now available in the ACM Digital Library. This educational platform facilitates the design and execution of metaheuristics through block-based visual programming."
 ---
 
-The paper “Othimi: A Block-Based Educational Programming Tool for Metaheuristic Design and Optimization”, recently presented at GECCO 2025, is now available in the ACM Digital Library: [https://doi.org/10.1145/3712255.3726569](https://doi.org/10.1145/3712255.3726569).
+The paper *"Othimi: A Block-Based Educational Programming Tool for Metaheuristic Design and Optimization"*, presented at [GECCO 2025](https://gecco-2025.sigevo.org/), is now available in the [ACM Digital Library](https://doi.org/10.1145/3712255.3726569). Developed within the **Be-META** project, the work introduces an educational platform that makes designing and experimenting with metaheuristics more accessible to students, educators and practitioners.
 
-**What is it about?**
+Othimi provides a block-based visual programming environment for designing, implementing and running metaheuristics, with a particular focus on evolutionary algorithms for combinatorial optimisation. Its drag-and-drop block interface represents complex algorithmic concepts intuitively, lowering the barriers to entry to these techniques.
 
-Othimi is an innovative educational software platform that provides a block-based visual programming environment for designing, implementing and running metaheuristics, with a particular focus on evolutionary algorithms for combinatorial optimisation:
+The platform enables users to experiment interactively and adjust parameters while visualising problems, algorithms and their results. These features make it easier to explore different configurations and understand their effects on algorithm behaviour.
 
-* It lowers barriers to entry by representing complex algorithmic concepts through an intuitive drag-and-drop interface.
-* Students and researchers can customise strategies, experiment interactively and fine-tune parameters while visualising problems, algorithms and results.
+By combining hands-on experimentation with theoretical learning, Othimi contributes to a deeper understanding of metaheuristic principles and connects computer science education with the applied development of optimisation algorithms.
 
-**Why does it matter?**
-
-By combining hands-on exploration with theoretical learning, Othimi helps both students and practitioners develop a deeper understanding of the principles of metaheuristics. It offers a distinctive bridge between education and applied algorithm development in computer science.
-
-This work was carried out as part of the **Be-META** research project (PID2023-152614OB-I00), funded by MICIU/AEI/10.13039/501100011033 and “ERDF/EU”.
-
-[Link to original news](https://lnkd.in/p/eMxkp7ED).
+[Read the original LinkedIn post](https://lnkd.in/p/eMxkp7ED).

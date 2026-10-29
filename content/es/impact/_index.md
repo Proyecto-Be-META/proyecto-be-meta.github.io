@@ -21,9 +21,8 @@ Esta página recoge el impacto del proyecto: publicaciones científicas, partici
 {{< card authors="Joel García Cubas" year="2026" title="Configuración y evaluación de modelos grandes de lenguaje para la codificación CIE-10" url="http://riull.ull.es/xmlui/handle/915/47677" >}}
 {{< card authors="Óscar Guerra Rodríguez" year="2026" title="Framework de gemelos digitales para la gestión de listas de espera quirúrgicas" >}}
 {{< card authors="Marta Rosa Cordero" year="2026" title="Graphics: Aplicación Web para el análisis de resultados en optimización" >}}
-{{< card authors="Ángela Fuhuan Luis Pérez" year="2026" >}}
+{{< card authors="Ángela Fuhuan Luis Pérez" year="2026" title="Un cuadro de mandos para el análisis de soluciones del problema de planificación integrada hospitalaria">}}
 {{< card authors="Marlon Eduardo Salazar Amador" year="2026" >}}
-{{< card authors="Javier Gómez Alayón" year="2026" >}}
 {{< card authors="Néstor Rubén Delgado Feliciano" year="2025" title="HealthPlanify - Un visualizador de asignación de recursos hospitalarios" url="http://riull.ull.es/xmlui/handle/915/42596" >}}
 {{< card authors="Alejandro Javier Aguiar Pérez" year="2025" title="Gemelos digitales aplicados a la gestión sanitaria: análisis en entornos estocásticos" url="http://riull.ull.es/xmlui/handle/915/42494" >}}
 {{< card authors="Javier Almenara Herrera" year="2025" title="Metaheurísticas en la optimización de la gestión hospitalaria" >}}

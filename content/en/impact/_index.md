@@ -21,9 +21,8 @@ This page gathers the project's impact: scientific publications, conference part
 {{< card authors="Joel García Cubas" year="2026" title="Configuration and Evaluation of Large Language Models for ICD-10 Coding" url="http://riull.ull.es/xmlui/handle/915/47677" >}}
 {{< card authors="Óscar Guerra Rodríguez" year="2026" title="Digital Twin Framework for Surgical Waiting List Management" >}}
 {{< card authors="Marta Rosa Cordero" year="2026" title="Graphics: A Web Application for Analysing Optimisation Results" >}}
-{{< card authors="Ángela Fuhuan Luis Pérez" year="2026" >}}
+{{< card authors="Ángela Fuhuan Luis Pérez" year="2026" title="  An interactive dashboard for analysing and comparing solutions to the Integrated Healthcare Timetabling Problem">}}
 {{< card authors="Marlon Eduardo Salazar Amador" year="2026" >}}
-{{< card authors="Javier Gómez Alayón" year="2026" >}}
 {{< card authors="Néstor Rubén Delgado Feliciano" year="2025" title="HealthPlanify: A Visualisation Tool for Hospital Resource Allocation" url="http://riull.ull.es/xmlui/handle/915/42596" >}}
 {{< card authors="Alejandro Javier Aguiar Pérez" year="2025" title="Digital Twins Applied to Healthcare Management: Analysis in Stochastic Environments" url="http://riull.ull.es/xmlui/handle/915/42494" >}}
 {{< card authors="Javier Almenara Herrera" year="2025" title="Metaheuristics for Optimising Hospital Management" >}}
