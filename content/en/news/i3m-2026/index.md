@@ -2,7 +2,7 @@
 title: "Be-META presents advances in a digital twin for surgical waiting list management in Genoa"
 date: 2026-10-05
 draft: false
-summary: "Professor Iván Castilla presented research from the Be-META project in Genoa, combining software agents, ontologies and human involvement to develop a digital twin for surgical waiting list management"
+summary: "Professor Iván Castilla presented research from the Be-META project in Genoa, combining software agents, ontologies and human involvement to develop a digital twin for surgical waiting list management."
 ---
 
 Professor Iván Castilla attended the [*International Multidisciplinary Modeling & Simulation Multiconference*](https://www.msc-les.org/i3m2026/) (I3M 2026) in Genoa, where he presented the paper *"An Agent Based Digital Twin Design for Surgical Waiting List Management: From Theoretical Approaches to Real Development”*, developed within the **Be-META** project. The research moves from theoretical design towards the development of a digital twin for surgical waiting list management.

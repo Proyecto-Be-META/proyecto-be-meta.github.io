@@ -2,7 +2,7 @@
 title: "Othimi: una plataforma visual para aprender y experimentar con metaheurísticas desarrollada en el marco de Be-META"
 date: 2025-09-17
 draft: false
-summary: "El artículo sobre Othimi, presentado en GECCO 2025, ya está disponible en la Biblioteca Digital de ACM. Esta plataforma educativa facilita el diseño y la ejecución de metaheurísticas mediante programación visual por bloque"
+summary: "El artículo sobre Othimi, presentado en GECCO 2025, ya está disponible en la Biblioteca Digital de ACM. Esta plataforma educativa facilita el diseño y la ejecución de metaheurísticas mediante programación visual por bloques."
 ---
 
 El artículo *"Othimi: A Block-Based Educational Programming Tool for Metaheuristic Design and Optimization"*, presentado en el congreso [GECCO 2025](https://gecco-2025.sigevo.org/), ya se encuentra disponible en la [Biblioteca Digital de ACM](https://doi.org/10.1145/3712255.3726569). El trabajo, desarrollado en el marco del proyecto **Be-META**, presenta una plataforma educativa que acerca el diseño y la experimentación con metaheurísticas a estudiantes, docentes y profesionales.

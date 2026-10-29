@@ -2,7 +2,7 @@
 title: "Iván Castilla presenta en Fez un prototipo de gemelo digital para mejorar la gestión de listas de espera quirúrgicas"
 date: 2025-10-07
 draft: false
-summary: "El profesor Iván Castilla presentó un prototipo de gemelo digital desarrollado en el marco del proyecto Be-META durante la International Multidisciplinary Modeling & Simulation Multiconference 2025, celebrada en Fez, Marruecos, del 17 al 19 de septiembre"
+summary: "El profesor Iván Castilla presentó un prototipo de gemelo digital desarrollado en el marco del proyecto Be-META durante la International Multidisciplinary Modeling & Simulation Multiconference 2025, celebrada en Fez, Marruecos, del 17 al 19 de septiembre."
 ---
 
 El profesor Iván Castilla participó en la [International Multidisciplinary Modeling & Simulation Multiconference 2025](https://www.msc-les.org/i3m2025/), celebrada en Fez, Marruecos, del 17 al 19 de septiembre de 2025. Durante el encuentro, presentó un prototipo de gemelo digital orientado a mejorar la gestión de las listas de espera quirúrgicas, cuyo desarrollo se enmarca en el proyecto **Be-META**.

@@ -2,7 +2,7 @@
 title: "Iván Castilla presents a digital twin prototype in Fez to improve surgical waiting list management"
 date: 2025-10-07
 draft: false
-summary: "Professor Iván Castilla presented a digital twin prototype developed within the Be-META project at the International Multidisciplinary Modeling & Simulation Multiconference 2025, held in Fez, Morocco, from 17 to 19 September"
+summary: "Professor Iván Castilla presented a digital twin prototype developed within the Be-META project at the International Multidisciplinary Modeling & Simulation Multiconference 2025, held in Fez, Morocco, from 17 to 19 September."
 ---
 
 Professor Iván Castilla attended the [International Multidisciplinary Modeling & Simulation Multiconference 2025](https://www.msc-les.org/i3m2025/), held in Fez, Morocco, from 17 to 19 September 2025. During the event, he presented a digital twin prototype aimed at improving surgical waiting list management, developed within the **Be-META** project.

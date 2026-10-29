@@ -2,7 +2,7 @@
 title: "Be-META presenta en Génova avances en un gemelo digital para la gestión de listas de espera quirúrgicas"
 date: 2026-10-05
 draft: false
-summary: "El profesor Iván Castilla presentó en Génova una investigación del proyecto Be-META que combina agentes software, ontologías y participación humana para desarrollar un gemelo digital destinado a la gestión de listas de espera quirúrgicas"
+summary: "El profesor Iván Castilla presentó en Génova una investigación del proyecto Be-META que combina agentes software, ontologías y participación humana para desarrollar un gemelo digital destinado a la gestión de listas de espera quirúrgicas."
 ---
 
 El profesor Iván Castilla participó en la [*International Multidisciplinary Modeling & Simulation Multiconference*](https://www.msc-les.org/i3m2026/) (I3M 2026), celebrada en Génova, donde presentó el trabajo *«An Agent Based Digital Twin Design for Surgical Waiting List Management: From Theoretical Approaches to Real Development»*, desarrollado en el marco del proyecto **Be-META**. La investigación avanza desde el diseño teórico hacia el desarrollo de un gemelo digital orientado a la gestión de listas de espera quirúrgicas.

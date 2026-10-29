@@ -13,6 +13,6 @@ Para resolver este problema, la investigación propone un marco que combina prog
 
 La contribución destaca la importancia de proporcionar una visión estructurada de los compromisos entre objetivos. Esta perspectiva resulta especialmente relevante en aplicaciones de transporte y distribución en las que deben considerarse simultáneamente la calidad del servicio, los tiempos de espera y la utilización de los recursos.
 
-El trabajo se ha realizado en colaboración con Samuel Nucamendi Guillén, Gara Miranda Valladares y Eduardo Lalla-Ruiz, y ha contado con el apoyo del proyecto Be-META (PID2023-152614OB-I00), financiado por MICIU/AEI/10.13039/501100011033 y por «FEDER/UE».
+El trabajo ha sido desarrollado por Eduardo Segredo, Samuel Nucamendi , Gara Miranda y Eduardo Lalla-Ruiz, y ha contado con el apoyo del proyecto Be-META (PID2023-152614OB-I00), financiado por MICIU/AEI/10.13039/501100011033 y por «FEDER/UE».
 
 [Consultar la publicación original en LinkedIn](https://lnkd.in/p/eXPu2vpY).
