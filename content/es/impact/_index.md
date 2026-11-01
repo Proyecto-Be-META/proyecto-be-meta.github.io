@@ -15,7 +15,9 @@ Esta página recoge el impacto del proyecto: publicaciones científicas, partici
 
 ## Trabajos Fin de Máster
 
+{{< cards >}}
 {{< card authors="Julián Garrido Arana" year="2026" title="De la Industria a la Organización: Un gemelo Digital Basado en Agentes para la Mejora de la Gestión de las Listas de Espera Quirúrgicas" >}}
+{{< /cards >}}
 
 ## Trabajos Fin de Grado
 

@@ -15,7 +15,9 @@ This page gathers the project's impact: scientific publications, conference part
 
 ## Master's theses
 
+{{< cards >}}
 {{< card authors="Julián Garrido Arana" year="2026" title="From Industry to Organization: an Agent-Based Digitl Twin for Improving the Management of Surgical Waiting Lists" >}}
+{{< /cards >}}
 
 ## Bachelor's theses
 
