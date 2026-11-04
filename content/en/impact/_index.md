@@ -35,6 +35,6 @@ This page gathers the project's impact: scientific publications, conference part
 {{< card authors="Javier Almenara Herrera" year="2025" title="Metaheuristics for Optimising Hospital Management" >}}
 {{< /cards >}}
 
-## Dissemination and collaborations
+## Dissemination
 
 * Participation in the Mathematics, Physics and Computer Science Scientific Route for compulsory secondary education students. The event took place on Tuesday, 29 September 2026 at the Escuela Superior de Ingeniería y Tecnología (ESIT) of the Universidad de La Laguna and included an introduction to the Parallel Algorithms and Languages (PAL) Research Group and its work within the Be-META project.

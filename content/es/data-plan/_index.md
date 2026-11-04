@@ -12,6 +12,7 @@ Esta página enlaza los repositorios con los conjuntos de datos generados por el
 
 ## Repositorios de datos
 
+<!--
 {{< dataset title="Conjunto de datos de ejemplo (demo)" url="https://example.org/repo" >}}
 Breve descripción del conjunto de datos y de lo que contiene. *(Entrada de ejemplo — sustituir por un repositorio real.)*
 {{< /dataset >}}
@@ -19,3 +20,4 @@ Breve descripción del conjunto de datos y de lo que contiene. *(Entrada de ejem
 {{< dataset title="Conjunto de datos de ejemplo 2 (demo)" url="https://example.org/repo-2" >}}
 Breve descripción del conjunto de datos. *(Entrada de ejemplo — sustituir por un repositorio real.)*
 {{< /dataset >}}
+-->

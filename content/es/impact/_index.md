@@ -35,6 +35,6 @@ Esta página recoge el impacto del proyecto: publicaciones científicas, partici
 {{< card authors="Javier Almenara Herrera" year="2025" title="Metaheurísticas en la optimización de la gestión hospitalaria" >}}
 {{< /cards >}}
 
-## Difusión y colaboraciones
+## Difusión
 
 * Participación en la Ruta Científica de Matemáticas, Física y Ciencia de la Computación dirigida a alumnado de Educación Secundaria Obligatoria. Durante la ruta, la cual tuvo lugar el martes 29 de septiembre de 2026 en la Escuela Superior de Ingeniería y Tecnología (ESIT) de la Universidad de La Laguna, se presentó el Grupo de Investigación Algoritmos y Lenguajes Paralelos (PAL), así como el trabajo que dicho grupo desarrolla en el marco del proyecto Be-META.
