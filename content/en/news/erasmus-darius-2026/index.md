@@ -1,6 +1,6 @@
 ---
 title: "Be-META welcomes student Darius Bereznitchi to contribute to the development of a hospital digital twin"
-date: 2026-11-12
+date: 2026-11-10
 draft: false
 summary: "An Erasmus+ traineeship enabled Darius Bereznitchi to contribute to the Be-META project, working with Iván Castilla and Eduardo Segredo to develop hospital management tools."
 ---

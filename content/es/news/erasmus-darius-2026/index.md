@@ -1,6 +1,6 @@
 ---
 title: "Be-META recibe al estudiante Darius Bereznitchi para colaborar en el desarrollo de un gemelo digital hospitalario"
-date: 2026-11-12
+date: 2026-11-10
 draft: false
 summary: "Una estancia Erasmus+ permitió a Darius Bereznitchi colaborar en el proyecto Be-META, junto a Iván Castilla y Eduardo Segredo, para desarrollar herramientas de gestión hospitalaria."
 ---
